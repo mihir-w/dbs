@@ -12,15 +12,14 @@ Queries supported: select, where, orderby and join.
 
 Usage:  
 	g++ path/main.cpp  
-	./a.out <config file>  ( Read the sample config file to know the syntax )  
-        > Ask queries  
+	./a.out <config file>  ( Read the sample config file to know the syntax )    
 
 Sample Usage:  
 	./a.out config.txt  
-	select * from table1  
-	select * from table1 where table.e_id<167  
-        select e_num from table1 where table1.e_id<167 and table1.e_order=462  
-	select s_id,s_order,s_num from table2 where table2.s_num<230 and table2.s_num>205 or table2.s_idLIKE48 orderby table2.s_num(DESC)  
+	select e_order from table1  
+	select * from table1 where table.e_id&lt;167  
+  select e_num from table1 where table1.e_id&lt;167 and table1.e_order=462  
+	select s_id,s_order,s_num from table2 where table2.s_num&lt;230 and table2.s_num&gt;205 or table2.s_idLIKE48 orderby table2.s_num(DESC)  
 
 Mihir Wadwekar  
 Aayush Saxena  
